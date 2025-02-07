@@ -48,9 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
   // Static data for icons and titles
   const iconData = [
     {
-      "icon": "https://cdn-icons-png.flaticon.com/512/4277/4277132.png",
-      "alt": "Pencil",
-      "title": "Copywrite"
+      "icon": "/img/html.png",
+      "alt": "Html",
+      "title": "HTML"
     },
     {
       "icon": "https://cdn-icons-png.flaticon.com/128/3474/3474360.png",
