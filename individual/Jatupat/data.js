@@ -4,7 +4,7 @@ export const testimonials = [
 export const skills =[
     {
         id:1,
-        icon:"img/html.png",
+        icon:"../img/html.png",
         alt: "Html",
         title:"HTML",
         level:"Beginner",
@@ -12,7 +12,7 @@ export const skills =[
     },
     {
         id:2,
-        icon:"img/css.png",
+        icon:"../img/css.png",
         alt:"css",
         title:"CSS",
         level:"Beginner",
@@ -20,7 +20,7 @@ export const skills =[
     },
     {
         id:3,
-        icon:"img/js.png",
+        icon:"../img/js.png",
         alt:"Java Script",
         title:"Java Script",
         level:"Beginner",
@@ -28,7 +28,7 @@ export const skills =[
     },
     {
         id:4,
-        icon:"img/py.png",
+        icon:"../img/py.png",
         alt:"python",
         title:"Python",
         level:"Beginner to Intermediate",
@@ -36,7 +36,7 @@ export const skills =[
     },
     {
         id:5,
-        icon:"img/oop.png",
+        icon:"../img/oop.png",
         alt:"OOP",
         title:"OOP",
         level:"Beginner to Intermediate",
