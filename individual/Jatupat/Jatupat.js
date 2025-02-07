@@ -1,8 +1,9 @@
 // main.js
-import { testimonials, skills ,features} from './Testimonials.js';
+import { testimonials, skills ,features} from './data.js';
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Render Testimonials
+  // Render Testimonials, will uncomment when have one
+  /*
   const testimonialsContainer = document.querySelector(".testimonials");
   testimonialsContainer.innerHTML = "";
 
@@ -33,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
     colDiv.appendChild(cardDiv);
     testimonialsContainer.appendChild(colDiv);
   });
+*/
+
 
   // Render Skills
   const skillsContainer = document.querySelector(".skills");
@@ -45,44 +48,22 @@ document.addEventListener("DOMContentLoaded", function () {
     skillsContainer.appendChild(noSkillDiv);
   }
 
-  // Static data for icons and titles
-  const iconData = [
-    {
-      "icon": "/img/html.png",
-      "alt": "Html",
-      "title": "HTML"
-    },
-    {
-      "icon": "https://cdn-icons-png.flaticon.com/128/3474/3474360.png",
-      "alt": "Labtop",
-      "title": "Web Design"
-    },
-    {
-      "icon": "https://cdn-icons-png.flaticon.com/128/869/869687.png",
-      "alt": "Shop",
-      "title": "Ecommerce"
-    },
-    {
-      "icon": "https://cdn-icons-png.flaticon.com/512/102/102645.png",
-      "alt": "Marketing",
-      "title": "Marketing"
-    }
-  ];
-
   skills.forEach((skill, index) => {
     const skillCard = `
       <div class="col-md-3">
-        <div class="card-skill p-3">
-          <a href="${skill.link}" target="_blank" class="mx-2">
-            <img src="${iconData[index].icon}" alt="${iconData[index].alt}" width="32" height="32">
-          </a>
-          <h5>${iconData[index].title}</h5>
+        <div class="card-skill p-3" id="${skill.id}">
+          <img src="${skill.icon}" alt="${skill.alt}" width="60" height="60">
+          <h5>${skill.title}</h5>
+          <p class="fw-bold">${skill.level}</p>
           <p class="text-muted">${skill.description || 'Description not available.'}</p>
         </div>
       </div>
     `;
     skillsContainer.innerHTML += skillCard;
   });
+
+  //render Quality
+  /*
   const featuresContainer = document.querySelector(".Clients");
   featuresContainer.innerHTML = "";
 
@@ -104,5 +85,5 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
       featuresContainer.innerHTML += featureCard;
     });
-  }
+  }*/
 });
